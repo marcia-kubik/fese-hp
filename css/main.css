@@ -7,7 +7,14 @@ body{
 img{
 	max-width: 100%;
 }
-
+h1{
+	font-size: 1.5em;
+}
+h2{
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1.8em;
+}
 /*BACKGROUNDS COLOR*/
 .bg-purple1{
 	background-color: #69325D;
@@ -32,16 +39,16 @@ img{
 	color: black;
 }
 .green{
-	color: #B7CC70;
+	color: #B9E56D;
 }
 .orange{
 	color: #FFC65B;
 }
 .blue{
-	color: #4AD1E7;
+	color: #4CC8E1;
 }
 .icepro-color{
-	color: #61D2D0 !important;
+	color: #61D2D0;
 }
 /*STYLE*/
 .bold{
@@ -61,19 +68,120 @@ img{
 }
 .btn-cta{
 	background-color: #8EC273;
-	padding: 9px 40px;
+	padding: 12px 80px;
 	color: white;
+	font-size: 1.2em;
+	border-radius: 10px;
+	border:2px solid #4E7D31;
+	-webkit-box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
+	-moz-box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
+	box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
+}
+.btn-cta-bottom{
+	border:none;
+}
+/*PADDINGS / MARGINS*/
+.pad-sm{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.pad-md{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.pad-lg{
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.top-20{
+	padding-top: 20px;
+}
+.top-40{
+	padding-top: 40px;
+}
+.top-60{
+	padding-top: 60px;
+}
+.top-80{
+	padding-top: 80px;
+}
+.top-100{
+	padding-top: 100px;
+}
+/*CONTENT*/
+main{
+	min-height: 100vh;
+	background-image: url(../images/bg-main.jpg);
+	background-size: cover;
+}
+.steps span{
+	padding: 0 10px;
 }
 
+.icepro{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: url(../images/bg-icepro.jpg) right bottom no-repeat;
+	background-color: white;
+}
+.icepro h4{
+	font-size: 1.5em;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+.icepro .discover{
+	font-size: 1.3em;
+}
+.link{
+	font-size: 1.2em;
+}
+
+.colaboradora{
+	background: url(../images/bg-colaboradora.jpg) center bottom;
+	background-size: cover;
+	min-height: 800px;
+	padding-top: 70px;
+}
+
+.fese{
+	background: url(../images/bg-fese.jpg);
+	background-size: cover;
+	position: relative;
+	min-height: 540px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+.astronaut{
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+}
+.final{
+	padding-top: 100px;
+	padding-bottom: 90px;
+	position: relative;
+}
+.handshake{
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
 
 footer{
 	background-color: #303F46;
+	padding-top: 40px;
+	padding-bottom: 35px;
 }
 footer a{
 	color: white;
 	display: block;
+	padding-bottom: 5px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	max-width: 200px;
 }
 footer .social a{
 	display: inline;
+	padding-right: 10px;
 }
 
