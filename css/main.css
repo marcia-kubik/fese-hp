@@ -15,6 +15,12 @@ h2{
 	font-weight: normal;
 	font-size: 1.8em;
 }
+a:hover{
+	color: inherit;
+}
+.btn:hover{
+	color: inherit;
+}
 /*BACKGROUNDS COLOR*/
 .bg-purple1{
 	background-color: #69325D;
@@ -109,10 +115,19 @@ h2{
 	padding-top: 100px;
 }
 /*CONTENT*/
-main{
+.main{
 	min-height: 100vh;
-	background-image: url(../images/bg-main.jpg);
+	background: url(../images/bg-main.jpg) left bottom;
 	background-size: cover;
+	position: relative;
+}
+.point{
+	position: absolute;
+	right: 0;
+	bottom: 330px;
+}
+.main p{
+	/*letter-spacing: .04em;*/
 }
 .steps span{
 	padding: 0 10px;
@@ -123,6 +138,7 @@ main{
 	padding-bottom: 70px;
 	background: url(../images/bg-icepro.jpg) right bottom no-repeat;
 	background-color: white;
+	position: relative;
 }
 .icepro h4{
 	font-size: 1.5em;
@@ -132,10 +148,17 @@ main{
 .icepro .discover{
 	font-size: 1.3em;
 }
+.camera{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
 .link{
 	font-size: 1.2em;
 }
-
+.link:hover{
+	color: #7F396D;
+}
 .colaboradora{
 	background: url(../images/bg-colaboradora.jpg) center bottom;
 	background-size: cover;
@@ -154,7 +177,7 @@ main{
 .astronaut{
 	position: absolute;
 	bottom: 0;
-	right: 20px;
+	right: 150px;
 }
 .final{
 	padding-top: 100px;
@@ -181,7 +204,62 @@ footer a{
 	max-width: 200px;
 }
 footer .social a{
-	display: inline;
+	display: inline-block;
 	padding-right: 10px;
 }
+footer .social a:hover{
+	opacity: .8;
+}
 
+
+@media screen and (max-width: 1280px) {
+    .camera{
+    	height: 600px;
+    }
+    .astronaut{
+    	right: 20px;
+    }
+    .point{
+    	top: 380px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .point{
+    	top: 506px;
+    }
+    .icepro{
+    	background: white;
+    	text-align: center;
+    }
+    .camera{
+    	display: none;
+    }
+    .icepro-cta{
+    	text-align: center;
+    }
+    .fese-content{
+    	padding-bottom: 180px;
+    }
+    .astronaut{
+    	height: 210px;
+    }
+}
+@media screen and (max-width: 768px) {
+	.point{
+    	top: 436px;
+    }
+    .features img{
+    	margin-top: 20px;
+    }
+    .social{
+    	text-align: left;
+    }
+}
+@media screen and (max-width: 640px) {
+	.point{
+    	top: 726px;
+    }
+    .steps span {
+     padding: 0 3px; 
+	}
+}
