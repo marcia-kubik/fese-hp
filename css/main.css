@@ -75,6 +75,10 @@ a:hover{
 	border-radius: 6px;
 	padding: 6px 25px;
 }
+.btn-secondary:hover{
+	color: #333;
+	background-color: white;
+}
 .btn-cta{
 	background-color: #8EC273;
 	padding: 12px 80px;
@@ -83,11 +87,21 @@ a:hover{
 	border-radius: 10px;
 	border:2px solid #4E7D31;
 	-webkit-box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
-	-moz-box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
-	box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
+	   -moz-box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
+	        box-shadow: 4px 4px 11px -1px rgba(0,0,0,0.35);
+}
+.btn-cta:hover{
+	color: #EDFDE5;
+	background-color: #A2D687;
+	-webkit-box-shadow: 4px 10px 11px -6px rgba(0,0,0,0.6);
+	   -moz-box-shadow: 4px 10px 11px -6px rgba(0,0,0,0.6);
+	        box-shadow: 4px 10px 11px -6px rgba(0,0,0,0.6);
+	/*margin-top: -1px;*/
+	-webkit-transition-timing-function: linear; /* Safari and Chrome */
+    transition-timing-function: linear;
 }
 .btn-cta-bottom{
-	border:none;
+	border-color: #7CA762;
 }
 /*PADDINGS / MARGINS*/
 .pad-sm{
